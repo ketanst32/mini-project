@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(weather2.jpeg);
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 700px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        form {
+            margin: 20px auto;
+            width: 60%;
+            text-align: center;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            width: 70%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .box{
+    font-size: 100px;
+   color: rgb(240, 233, 233);
+   padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Air Quality</a>
+    </nav>
+    <div class="box">
+        <span>Welcome</span> 
+        <span>to 3</span>
+        <span id="element"></span>
+        <script src="pro.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+            var typed = new Typed('#element', {
+                strings: ['60', 'Sixty.'],
+                typeSpeed: 50,
+                loop:true,
+              });
+
+    </script>
+        
+    </div>
+    <form action="MyServlet" method="post" class="searchInput">
+        <input type="text" placeholder="Enter City Name" id="searchInput" value="New Delhi" name="city"/>
+        <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form> 
+</body>
+</html>

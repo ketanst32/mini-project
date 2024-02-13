@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body {
+        background-image: linear-gradient(to bottom, #ADD8E6  0%, #87CEEB  33%, #87CEFA  66%, #0000FF  100%);
+    }
+    h1{
+      margin-left: 500px;
+    }
+    h1:hover {
+       text-shadow:2px  2px  4px rgba(0, 0, 0, 0.396); /* Horizontal offset, vertical offset, blur radius, color */;
+    }
+    .image-container {
+        display: flex;
+        justify-content: space-evenly; /* Adjust as needed */
+        
+      }
+     
+    .pic{
+        width: 300px;
+        height:  200px; 
+        margin: 50px;
+        transition: all  0.4s ease; /* Smooth transition for all properties */
+    }
+    .pic:hover {
+        transform: scale(1.2); /* Slightly larger */
+        box-shadow:  0  0  10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    }</style>
+</head>
+<link rel="stylesheet" href="About.css">
+<body>
+    <section id="About">
+        <h1>ABOUT</h1>
+        <div class="para">
+        <P>We have to create a weather forecasting website which is used for predicting future weather conditions based on current observations and historical data. It involves the study of <a href="https://en.wikipedia.org/wiki/Atmospheric_science" class="nospace" >atmospheric science</a> and <a href="https://en.wikipedia.org/wiki/Meteorology" class="nospace">meteorology</a>, and it plays a crucial role in our daily lives.</P>
+        <p>Weather forecasts are essential for a variety of sectors, including agriculture,<a href="https://en.wikipedia.org/wiki/Aviation"class="nospace">Aviation</a>, <a href="https://en.wikipedia.org/wiki/Ship" class="nospace">shipping</a>, and emergency services. They help farmers plan their planting schedules, pilots decide whether to take off or land, and emergency services prepare for potential disasters.</p>
+        <p>Weather forecasting relies on a network of weather stations that collect data on temperature, humidity, wind speed and direction, pressure, <a href="https://en.wikipedia.org/wiki/Precipitation" class="nospace">precipitation</a>, and other atmospheric variables. These data are then processed and analyzed using complex mathematical models to produce accurate predictions.</p>
+        </div>
+         <!-- <div class="intro">
+           <div id="krishna"><a href="#">Krishna Yadav</a></div>
+           <div id="Ketan"><a href="#">Ketan Pandey</a></div>
+           <div id="Nomman"><a href="#">Mhod.Noman</a></div>
+           <div id="Divyanshu"><a href="#">Divyanshu Kureel</a></div>
+         </div> -->
+       
+         <div class="img-container">
+           <img src="image1.jpeg" alt="No Image" class="pic" >
+           <img src="image2.jpeg" alt=""  class="pic" >
+           <img src="image3.jpeg" alt=""   class="pic">
+        </div>
+        </section>
+        <!-- <script src="About.js"></script> -->
+      </body>
+</html>
